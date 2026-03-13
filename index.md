@@ -15,7 +15,7 @@ These essays explore themes from my forthcoming book *[Salvation and the Risen K
 
 ## Essays
 
-{% for post in site.posts %}
+{% for post in site.posts limit:3 %}
 
 ### [{{ post.title }}]({{ post.url }})
 
@@ -26,3 +26,5 @@ These essays explore themes from my forthcoming book *[Salvation and the Risen K
 <hr style="margin:30px 0;">
 
 {% endfor %}
+
+<p><a href="/essays">View all essays →</a></p>
