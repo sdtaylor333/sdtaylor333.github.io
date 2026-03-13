@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ page.title }} – {{ site.title }}</title>
+
+<style>
+body {
+  font-family: Georgia, serif;
+  max-width: 760px;
+  margin: 60px auto;
+  padding: 0 20px;
+  line-height: 1.7;
+}
+
+nav a {
+  margin-right: 18px;
+  text-decoration: none;
+  color: #444;
+}
+
+nav {
+  margin-bottom: 40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>{{ site.title }}</h1>
+
+<nav>
+<a href="/">Home</a>
+<a href="/about">About</a>
+<a href="/essays">Essays</a>
+<a href="/book">Book</a>
+</nav>
+
+{{ content }}
+
+</body>
+</html>
