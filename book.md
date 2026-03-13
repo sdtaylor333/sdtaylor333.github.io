@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Books
-permalink: /book/
+permalink: /books/
 ---
 
 # Books
