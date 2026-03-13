@@ -3,6 +3,8 @@ layout: default
 title: Book
 ---
 
+![Salvation and the Risen King Cover](/salvation-risen-king-cover.jpg)
+
 # *Salvation and the Risen King*
 
 *Assurance, Allegiance, and Life in the Kingdom*
