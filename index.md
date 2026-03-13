@@ -3,11 +3,9 @@ layout: default
 title: Home
 ---
 
-# Salvation and the Risen King
+# Essays on Salvation, Union with Christ, and the Kingdom of God
 
-Essays exploring union with Christ, the kingdom of God, and faith as allegiance to the risen King.
-
-These essays develop themes from my forthcoming book *[Salvation and the Risen King](/books)*.
+These essays explore themes from my forthcoming book *[Salvation and the Risen King](/books)*.
 
 <p align="center">
 <a href="/books">
