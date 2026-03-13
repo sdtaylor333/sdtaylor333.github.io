@@ -3,7 +3,9 @@ layout: default
 title: Book
 ---
 
-![Salvation and the Risen King Cover](/salvation-risen-king-cover-v2.jpg.png) 
+<p align="center">
+  <img src="/salvation-risen-king-cover-v2.jpg.png" width="350">
+</p>
 
 # *Salvation and the Risen King*
 
