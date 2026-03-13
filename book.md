@@ -11,7 +11,7 @@ permalink: /books/
 A forthcoming book on salvation as participation in the life of the risen King through faith understood as trusting allegiance.
 
 <p align="center">
-  <img src="/salvation-risen-king-cover-v2.jpg.png" class="book-cover">
+  <img src="/salvation-risen-king-cover-v2.jpg.png">
 </p>
 
 ### Chapter Outline
