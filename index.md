@@ -15,11 +15,14 @@ These essays explore themes from my forthcoming book *[Salvation and the Risen K
 
 ## Essays
 
-<ul>
 {% for post in site.posts %}
-  <li>
-    {{ post.date | date: "%B %-d, %Y" }} – 
-    <a href="{{ post.url }}">{{ post.title }}</a>
-  </li>
+
+### [{{ post.title }}]({{ post.url }})
+
+<p style="margin-top:-8px; color:#666;">
+{{ post.date | date: "%B %-d, %Y" }}
+</p>
+
+<hr style="margin:30px 0;">
+
 {% endfor %}
-</ul>
