@@ -7,7 +7,7 @@ title: Home
 
 Essays exploring union with Christ, the kingdom of God, and faith as allegiance to the risen King.
 
-This site contains essays and reflections related to my forthcoming book *Salvation and the Risen King*.
+These essays develop themes from my forthcoming book *[Salvation and the Risen King](/book)*.
 
 ## Essays
 
