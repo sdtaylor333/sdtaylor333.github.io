@@ -13,6 +13,10 @@ I respond to all questions, though it may take some time.
 - Questions about faith or Scripture  
 - Feedback on my writing  
 
+<p style="font-size:0.9em; color:#666;">
+After submitting, you’ll see a confirmation page. Just tap back to return here.
+</p>
+
 <form action="https://formspree.io/f/mzdjarrz" method="POST">
 
   <input type="hidden" name="_next" value="https://sdtaylor.com/thank-you">
