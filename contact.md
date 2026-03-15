@@ -15,7 +15,7 @@ I respond to all questions, though it may take some time.
 
 <form action="https://formspree.io/f/mzdjarrz" method="POST">
 
-  <input type="hidden" name="_redirect" value="https://sdtaylor.com/thank-you">
+  <input type="hidden" name="_next" value="https://sdtaylor.com/thank-you">
 
   <label>Your Name</label><br>
   <input type="text" name="name" required style="width:100%; padding:8px; margin-bottom:10px;">
