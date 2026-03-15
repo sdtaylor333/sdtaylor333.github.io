@@ -13,7 +13,7 @@ I respond to all questions, though it may take some time.
 - Questions about faith or Scripture  
 - Feedback on my writing  
 
-<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+<form action="https://formspree.io/f/mzdjarrz" method="POST">
   
   <label>Your Name</label><br>
   <input type="text" name="name" required style="width:100%; padding:8px; margin-bottom:10px;">
