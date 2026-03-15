@@ -35,6 +35,14 @@ After submitting, you’ll see a confirmation page. Just tap back to return here
   <label>Your Message</label><br>
   <textarea name="message" rows="5" required style="width:100%; padding:8px; margin-bottom:10px;"></textarea>
 
-  <button type="submit" style="padding:10px 15px;">Send</button>
-
+  <button type="submit" style="
+  padding:10px 18px;
+  background:#222;
+  color:white;
+  border:none;
+  border-radius:4px;
+  cursor:pointer;
+">
+Send
+</button>
 </form>
