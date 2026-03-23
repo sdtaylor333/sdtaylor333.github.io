@@ -4,7 +4,7 @@ title: "Salvation and the Risen King"
 date: 2026-03-22
 ---
 
-## Belonging to Jesus and Life in His Kingdom
+### Belonging to Jesus and Life in His Kingdom
 
 ### The World Has a King
 
