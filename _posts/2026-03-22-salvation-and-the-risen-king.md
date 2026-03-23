@@ -4,10 +4,6 @@ title: "Salvation and the Risen King"
 date: 2026-03-22
 ---
 
-<p style="color:#666; margin-top:-10px;">
-{{ page.date | date: "%B %-d, %Y" }}
-</p>
-
 ## Belonging to Jesus and Life in His Kingdom
 
 ### The World Has a King
