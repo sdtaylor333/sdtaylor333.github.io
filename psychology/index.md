@@ -1,7 +1,6 @@
-
 ---
 layout: default
-title: "History of Psychology Encyclopedia"
+title: History of Psychology Encyclopedia
 permalink: /psychology/
 ---
 
