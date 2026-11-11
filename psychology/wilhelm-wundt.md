@@ -1,4 +1,8 @@
-
+---
+layout: default
+title: "Wilhelm Wundt (1832–1920)"
+permalink: /psychology/wilhelm-wundt/
+---
 ---
 layout: default
 title: "Wilhelm Wundt (1832–1920)"
