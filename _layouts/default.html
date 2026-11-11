@@ -1,101 +1,311 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>{{ site.title }}</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style>
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  max-width: 760px;
-  margin: 60px auto;
-  padding: 0 20px;
-  line-height: 1.7;
-}
+  <title>{{ page.title | default: site.title }} | Shelton D. Taylor</title>
 
-nav a {
-  margin-right: 18px;
-  text-decoration: none;
-  color: #444;
-}
+  <meta name="description" content="The interdisciplinary research library of Shelton D. Taylor. Philosophy, psychology, biblical Greek, psychopharmacology, biochemistry, and technology.">
 
-nav {
-  margin-bottom: 40px;
-}
-  img {
-  width: 220px;
-  height: auto;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-  border-radius: 4px;
-  margin: 20px 0;
-}
-  input, textarea, select {
-  border: 1px solid #ccc;
-  background-color: #fafafa;
-  border-radius: 4px;
-}
+  <style>
+    :root {
+      --background: #ffffff;
+      --foreground: #111111;
+      --muted: #666666;
+      --border: #dddddd;
+      --surface: #f7f7f7;
+    }
 
-input:focus, textarea:focus, select:focus {
-  outline: none;
-  border-color: #888;
-  background-color: #fff;
-}
-  h1 { font-size: 32px; }
-h2 { margin-top: 30px; font-size: 22px; }
-h3 { margin-top: 25px; font-size: 18px; }
-  h2 {
-  font-weight: 500;
-  font-size: 20px;
-  color: #555;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-h3 {
-  margin-top: 35px;
-  margin-bottom: 10px;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-p {
-  margin-bottom: 14px;
-}
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--foreground);
+      font-family: -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.8;
+    }
 
-a {
-  color: #5a3ec8;
-  text-decoration: none;
-}
+    .container {
+      width: min(100% - 40px, 1000px);
+      margin: auto;
+    }
 
-a:hover {
-  text-decoration: underline;
-}
-</style>
+    header {
+      padding: 48px 0 24px;
+      border-bottom: 1px solid var(--border);
+    }
 
+    .site-title {
+      margin: 0;
+      font-size: clamp(28px, 5vw, 40px);
+      font-weight: 700;
+      letter-spacing: -1px;
+      line-height: 1.2;
+    }
+
+    .site-title a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .site-description {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 15px;
+      letter-spacing: 0.3px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 24px;
+      margin-top: 30px;
+    }
+
+    nav a {
+      color: var(--foreground);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 7px 0;
+      border-bottom: 2px solid transparent;
+    }
+
+    nav a:hover,
+    nav a:focus-visible {
+      border-bottom-color: var(--foreground);
+    }
+
+    main {
+      padding: 48px 0 80px;
+      min-height: 55vh;
+      max-width: 850px;
+    }
+
+    h1, h2, h3, h4 {
+      line-height: 1.3;
+      letter-spacing: -0.4px;
+    }
+
+    h1 {
+      font-size: clamp(28px, 4vw, 38px);
+      margin: 0 0 26px;
+    }
+
+    h2 {
+      font-size: 25px;
+      margin-top: 46px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h3 {
+      font-size: 20px;
+      margin-top: 34px;
+    }
+
+    p {
+      margin: 0 0 22px;
+    }
+
+    a {
+      color: var(--foreground);
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      color: var(--muted);
+    }
+
+    ul, ol {
+      padding-left: 25px;
+    }
+
+    li {
+      margin-bottom: 9px;
+    }
+
+    blockquote {
+      margin: 30px 0;
+      padding: 10px 25px;
+      border-left: 3px solid var(--foreground);
+      background: var(--surface);
+      color: #444;
+    }
+
+    .article-meta {
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: -12px;
+      margin-bottom: 35px;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px;
+      margin: 20px 0;
+      background: #fff;
+    }
+
+    .card:hover {
+      border-color: #999;
+    }
+
+    .alphabet {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 30px 0;
+    }
+
+    .alphabet a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .alphabet a:hover {
+      background: var(--foreground);
+      color: white;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    pre {
+      padding: 18px;
+      overflow-x: auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+    }
+
+    code {
+      font-size: 0.9em;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 30px 0 45px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    footer a {
+      color: inherit;
+    }
+
+    @media (max-width: 650px) {
+      header {
+        padding-top: 30px;
+      }
+
+      nav {
+        gap: 5px 18px;
+      }
+
+      nav a {
+        font-size: 13px;
+      }
+
+      main {
+        padding-top: 35px;
+      }
+
+      body {
+        font-size: 16px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+    }
+  </style>
 </head>
 
-  <body>
+<body>
 
-<h2></h2>{{ site.title }}</h2>
-<p>Theology Writer</p>
-<p>MA Theological Studies @LibertyU</p>
+  <header>
+    <div class="container">
 
-<nav>
-<a href="/">Home</a>
-<a href="/about">About</a>
-<a href="/essays">Essays</a>
-<a href="/books">Books</a>
-<a href="/contact">Contact</a>
-</nav>
+      <h1 class="site-title">
+        <a href="{{ '/' | relative_url }}">
+          Shelton D. Taylor
+        </a>
+      </h1>
 
-{% if page.layout == "post" %}
- <h1 style="margin-bottom: 5px;">{{ page.title }}</h1>
+      <p class="site-description">
+        Interdisciplinary Scholarship &amp; Research
+      </p>
 
-  <p style="color:#666; margin-top:-10px;">
-    {{ page.date | date: "%B %-d, %Y" }}
-  </p>
-{% endif %}
-    
-{{ content }}
+      <nav aria-label="Main navigation">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/psychology/' | relative_url }}">Psychology</a>
+        <a href="{{ '/philosophy/' | relative_url }}">Philosophy</a>
+        <a href="{{ '/greek/' | relative_url }}">Koine Greek</a>
+        <a href="{{ '/psychopharmacology/' | relative_url }}">Psychopharmacology</a>
+        <a href="{{ '/biochemistry/' | relative_url }}">Biochemistry</a>
+        <a href="{{ '/library/' | relative_url }}">Library</a>
+        <a href="{{ '/about/' | relative_url }}">About</a>
+      </nav>
 
-<footer style="margin-top:40px; font-size:0.9em; color:#666;">
-  © 2026 Shelton D. Taylor<br>
-  Follow on X: <a href="https://x.com/SDTaylor333" target="_blank">@SDTaylor333</a>
-</footer>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <main id="main-content">
+
+      {% if page.layout == "post" %}
+        <h1>{{ page.title }}</h1>
+
+        <p class="article-meta">
+          {{ page.date | date: "%B %-d, %Y" }}
+        </p>
+      {% endif %}
+
+      {{ content }}
+
+    </main>
+
+  </div>
+
+  <footer>
+    <div class="container">
+
+      <p>
+        &copy; {{ 'now' | date: "%Y" }} Shelton D. Taylor.
+        All rights reserved.
+      </p>
+
+      <p>
+        Independent scholarship, interdisciplinary research,
+        and lifelong learning.
+      </p>
+
+    </div>
+  </footer>
 
 </body>
+</html>
