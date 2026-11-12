@@ -54,6 +54,15 @@ main {
 
 }
 
+  
+<p style="text-align:center; margin:0 0 30px;">
+  <a href="https://substack.com/@sheltontaylor"
+     style="color:#722F37; font-weight:600; font-size:18px;">
+    📚 Read My Articles on Substack
+  </a>
+</p>
+
+
 .portrait {
 
   display: block;
