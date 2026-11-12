@@ -87,6 +87,7 @@ An alphabetical reference encyclopedia exploring the pioneers, theories, discove
 ## W
 
 - [Wilhelm Wundt (1832–1920)]({{ '/psychology/wilhelm-wundt/' | relative_url }}) — Pioneer of experimental psychology.
+- [William James (1842–1910)]({{ '/psychology/william-james/' | relative_url }}) — American psychology, consciousness, functionalism, and pragmatism. **Entry 002.**
 
 ## X
 *Entries forthcoming.*
@@ -100,3 +101,4 @@ An alphabetical reference encyclopedia exploring the pioneers, theories, discove
 ---
 
 *An ongoing project in the history of psychological science and thought.*
+
